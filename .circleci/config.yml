@@ -6,3 +6,8 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world!!"
+  deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "cd:1a:65:10:ae:0f:01:9a:61:ef:c2:29:25:d4:01:de"
